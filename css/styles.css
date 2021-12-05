@@ -52,6 +52,10 @@ p {
 
 /* Хедер */
 
+.main-nav {
+    border-bottom: solid 1px #ececec;
+}
+
 /* Main-nav */
 
 .main-nav {
@@ -180,8 +184,11 @@ section {
 }
 
 .advantages-card {
-    max-width: 270px;
     flex-basis: calc(100% / 4);
+}
+
+.advantages-card:not(:last-child) {
+    margin-right: 30px;
 }
 
 .advantages-title {
@@ -329,6 +336,16 @@ section {
     display: none;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter-button {
     display: inline-block;
     border-radius: 4px;
@@ -354,6 +371,21 @@ section {
     cursor: pointer;
 }
 
+/* Примеры портфолио */
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.portfolio-card {
+    flex-basis: calc(100 / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 .description-hidden {
     display: none;
 }
@@ -364,6 +396,8 @@ section {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-left: 24px;
 }
 
 .card-description {
@@ -371,4 +405,6 @@ section {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-top: 4px;
+    margin-left: 24px;
 }

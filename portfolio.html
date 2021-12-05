@@ -21,21 +21,23 @@
     <body>
         <!-- Хедер -->
 
-        <header class="container">
-            <nav>
+        <header class="page-header">
+            <nav class="container main-nav">
                 <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
-                <ul>
-                    <li><a class="nav-link active" href="#">Студия</a></li>
-                    <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="nav-link" href="#">Контакты</a></li>
+
+                <ul class="site-nav">
+                    <li class="item"><a class="nav-link" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="nav-link active" href="#">Портфолио</a></li>
+                    <li class="item"><a class="nav-link" href="#">Контакты</a></li>
+                </ul>
+
+                <ul class="contact-link">
+                    <li class="item">
+                        <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="item"><a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </nav>
-            <ul>
-                <li>
-                    <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li><a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
         </header>
 
         <!-- Главный контент страницы -->
@@ -45,18 +47,18 @@
                 <!-- Фильтры Портфолио -->
 
                 <h1 class="portfolio-title">Портфолио</h1>
-                <ul>
-                    <li><button class="filter-button" type="button">Все</button></li>
-                    <li><button class="filter-button" type="button">Веб-сайты</button></li>
-                    <li><button class="filter-button" type="button">Приложения</button></li>
-                    <li><button class="filter-button" type="button">Дизайн</button></li>
-                    <li><button class="filter-button" type="button">Маркетинг</button></li>
+                <ul class="button-container">
+                    <li class="button-item"><button class="filter-button" type="button">Все</button></li>
+                    <li class="button-item"><button class="filter-button" type="button">Веб-сайты</button></li>
+                    <li class="button-item"><button class="filter-button" type="button">Приложения</button></li>
+                    <li class="button-item"><button class="filter-button" type="button">Дизайн</button></li>
+                    <li class="button-item"><button class="filter-button" type="button">Маркетинг</button></li>
                 </ul>
 
                 <!-- Примеры портфолио  -->
 
-                <ul>
-                    <li>
+                <ul class="portfolio-container">
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_00.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
@@ -68,7 +70,7 @@
                             <p class="card-description">Веб-сайт</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_01.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
@@ -80,7 +82,7 @@
                             <p class="card-description">Дизайн</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_02.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
@@ -92,7 +94,7 @@
                             <p class="card-description">Приложение</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_03.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
@@ -104,7 +106,7 @@
                             <p class="card-description">Маркетинг</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_04.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
@@ -116,7 +118,7 @@
                             <p class="card-description">Приложение</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_05.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
@@ -128,7 +130,7 @@
                             <p class="card-description">Веб-сайт</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_06.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
@@ -140,7 +142,7 @@
                             <p class="card-description">Дизайн</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_07.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
@@ -152,7 +154,7 @@
                             <p class="card-description">Маркетинг</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="portfolio-card">
                         <a href="#">
                             <img src="./images/portfolio_08.jpg" width="370" alt="Пример работы" />
                             <p class="description-hidden">
