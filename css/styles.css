@@ -37,6 +37,8 @@ a {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -49,6 +51,15 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.visially-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -59,12 +70,15 @@ p {
 /* Хедер */
 
 .page-header {
-    margin: 0 auto;
     border-bottom: solid 1px #ececec;
 }
 
 /* Main-nav */
 
+.header {
+    display: flex;
+    align-items: center;
+}
 .main-nav {
     display: flex;
     align-items: center;
@@ -144,6 +158,7 @@ p {
 }
 
 .hero-container {
+    padding: 200px 0;
     text-align: center;
     background-color: var(--footer-background-color);
 }
@@ -183,8 +198,8 @@ p {
 
 /* Преимущества */
 
-.advantages {
-    margin-bottom: -94px;
+.work-section {
+    padding-top: 0;
 }
 
 .advantages-container {
@@ -199,9 +214,9 @@ p {
     margin-right: 30px;
 }
 
-.advantages-title {
+/* .advantages-title {
     display: none;
-}
+} */
 
 .advantages-item {
     margin-bottom: 10px;
@@ -245,7 +260,6 @@ p {
 
 .team {
     background-color: var(--secondary-background-color);
-    margin: 0 auto;
 }
 
 .team-title {
@@ -266,7 +280,6 @@ p {
     background-color: var(--primary-background-color);
     max-width: 270px;
     flex-basis: calc(100% / 4);
-    padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -275,9 +288,8 @@ p {
     margin-right: 30px;
 }
 
-.team-photo {
-    margin-top: 0;
-    margin-bottom: 30px;
+.teamcard-info {
+    padding: 30px 0;
 }
 
 .team-name {
@@ -302,7 +314,6 @@ p {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    margin: 0 auto;
     background-color: var(--footer-background-color);
 }
 
@@ -318,9 +329,12 @@ p {
     letter-spacing: 0.03em;
 }
 
+.footer-item + .footer-item {
+    margin-top: 9px;
+}
+
 .footer-adress {
     display: inline-block;
-    margin-bottom: 9px;
 
     font-style: normal;
     font-size: 14px;
@@ -331,7 +345,6 @@ p {
 
 .footer-contact-item {
     display: inline-block;
-    margin-bottom: 9px;
 
     font-style: normal;
     font-size: 14px;
@@ -341,10 +354,6 @@ p {
 }
 
 /* Портфолио */
-
-.portfolio-title {
-    display: none;
-}
 
 .button-container {
     display: flex;

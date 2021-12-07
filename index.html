@@ -22,7 +22,7 @@
         <!-- Хедер -->
 
         <header class="page-header">
-            <div class="container">
+            <div class="container header">
                 <nav class="main-nav">
                     <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
 
@@ -31,15 +31,15 @@
                         <li class="item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
                         <li class="item"><a class="nav-link" href="#">Контакты</a></li>
                     </ul>
-
-                    <ul class="contact-link">
-                        <li class="item">
-                            <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-
-                        <li class="item"><a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
                 </nav>
+
+                <ul class="contact-link">
+                    <li class="item">
+                        <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+
+                    <li class="item"><a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
             </div>
         </header>
 
@@ -47,18 +47,20 @@
             <!-- Герой -->
 
             <section class="hero-container">
+                <div class="container">
                 <h1 class="hero-title">
                     Эффективные решения <br />
                     для вашего бизнеса
                 </h1>
                 <button type="button" class="hero-order-btn">Заказать услугу</button>
+               </div>
             </section>
 
             <!-- Преимущества -->
 
-            <section class="advantages section">
+            <section class="section work-section">
                 <div class="container">
-                    <h2 class="advantages-title">Преимущества работы с нами</h2>
+                    <h2 class="visially-hidden">Преимущества работы с нами</h2>
 
                     <ul class="advantages-container">
                         <li class="advantages-card">
@@ -121,26 +123,34 @@
                     <ul class="team-container">
                         <li class="team-card">
                             <img class="team-photo" src="./images/our_team_1.jpg" alt="Член команды" width="270" />
-                            <h3 class="team-name">Игорь Демьяненко</h3>
-                            <p class="team-position">Product Designer</p>
+                            <div class="teamcard-info">
+                                <h3 class="team-name">Игорь Демьяненко</h3>
+                                <p class="team-position">Product Designer</p>
+                            </div>
                         </li>
 
                         <li class="team-card">
                             <img class="team-photo" src="./images/our_team_2.jpg" alt="Член команды" width="270" />
-                            <h3 class="team-name">Ольга Репина</h3>
-                            <p class="team-position">Frontend Developer</p>
+                            <div class="teamcard-info">
+                                <h3 class="team-name">Ольга Репина</h3>
+                                <p class="team-position">Frontend Developer</p>
+                            </div>
                         </li>
 
                         <li class="team-card">
                             <img class="team-photo" src="./images/our_team_3.jpg" alt="Член команды" width="270" />
-                            <h3 class="team-name">Николай Тарасов</h3>
-                            <p class="team-position">Marketing</p>
+                            <div class="teamcard-info">
+                                <h3 class="team-name">Николай Тарасов</h3>
+                                <p class="team-position">Marketing</p>
+                            </div>
                         </li>
 
                         <li class="team-card">
                             <img class="team-photo" src="./images/our_team_4.jpg" alt="Член команды" width="270" />
-                            <h3 class="team-name">Михаил Ермаков</h3>
-                            <p class="team-position">UI Designer</p>
+                            <div class="teamcard-info">
+                                <h3 class="team-name">Михаил Ермаков</h3>
+                                <p class="team-position">UI Designer</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -154,15 +164,15 @@
                 <a class="footer-logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
                 <address>
                     <ul>
-                        <li>
+                        <li class="footer-item">
                             <a class="footer-adress" href="#">г.Киев, пр-т Леси Украинки, 26</a>
                         </li>
 
-                        <li>
+                        <li class="footer-item">
                             <a class="footer-contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
 
-                        <li>
+                        <li class="footer-item">
                             <a class="footer-contact-item" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
